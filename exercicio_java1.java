@@ -1,8 +1,8 @@
 package quarta_aulajava;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class exemplo1 {
+public class exercicio_java1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -10,12 +10,11 @@ public class exemplo1 {
 		int senha=123,password=0;
 		Scanner sc = new Scanner(System.in);
 		
-		while(senha != password) { //comparação
+		do{
 			System.out.println("DIGITE A SENHA");
 			password = sc.nextInt();
-			
-		}
-		
+		}while(senha != password);
+				
 		System.out.println("SENHA CORRETA");
 
 	}
